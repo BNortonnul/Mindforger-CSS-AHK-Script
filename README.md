@@ -47,34 +47,47 @@ Font dependencies: Lato, Playfair Display
 
 This is intended to provide workarounds for various issues with mindforger. This works only on Windows, because it is programmed in AutoHotkey.
 
-Be careful using "destructive" functions. They can blow up and destroy information if misused. 
+Be careful using "destructive" functions. They can blow up and destroy information if misused. Make sure to test them on cloned information, and adjust the sleep functions (which are "Sleep, x"; x = x ms) to a stable pace for your computer.
 
 ### NOTE MOVEMENT FUNCTIONS
 
 Ctrl + E: Extract all headings in a note into a series of separate notes. If there is a heading hierarchy, it will be preserved (within reason). Timestamps will be added to both the extracted-from and extracted-into notes, which are different. This can be done in either the note editor, or in the notebook view. 
+
 Ctrl + Shift + E: The same, but place a different note as a hierarchical parent to the extracted notes. This is a default note.
 
 Every other function unless otherwise specified is only done in the notebook view. 
 
+---
 Ctrl + D: Copy the text you have selected, and adds in the current URL you are in. Uses Chromium shortcuts. Formats both "content" and "source" for efficient retrievable pasting of web information. Adds a timestamp. 
 
+---
 Ctrl + T: Destructive. Merge two notes. The note below the currently selected one will be consumed and merged. 
 
+---
 Ctrl + Shift + C: Copy an entire note, title and contents included.
+
 Ctrl + Shift + X: Destructive. Ditto; delete originating note.
+
 Ctrl + Shift + V: Paste the note.
 
+---
 Del: Destructive. Removes note without prompt. Returns you to the note below the previously present. Useful for efficient deletion.
 
+---
 Ctrl + Shift + G: Moves backward in the Recent Notes selection. Like a "back" button but where it takes you is unpredictable. Press it enough times and you should get back to where you want to be.  
 
+---
 Ctrl + R: This function is done in the note editor. Extract the selection of text. If it starts with a header, this will be made the title of the subsequent note. Adds in a timestamp.
 
+---
 \` (backtick key): Add in a timestamp. 
 Ctrl + \`: Create three backticks, which is one end of a Markdown blockquote. 
 
+---
 Ctrl + M: Create a note with a title as a timestamp. All functions add a timestamp to the top. Immediately moves to the editor once created.
+
 Alt + M: Create a note, but leave you to specify the title. When either the left mouse button or ENTER is pressed, move into the note editor.
+
 Ctrl + Shift + M: Create a note. Doesn't go into the note editor, useful for quickly creating notes for note structure. 
 
 #### FAST REFACTOR FUNCTIONS
@@ -85,21 +98,29 @@ This is slightly unreliable. The Recent Notes tab doesn't always place our selec
 
 When either selection occurs, the refactor display will open, and once either the left mouse button or enter is pressed (implying the user has selected a destination for the note in Mindforger), the "return" function will activate. The return function can be cancelled by pressing Ctrl + G (but no other keybindings do this).
 
+---
 Ctrl + G: Refile a note. Return to the note below the previous when finished.
-Ctrl + Down Arrow: Ditto.
-Alt + G: Refile a note. Return to the note ABOVE the previous when finished. 
-Ctrl + Up Arrow: Ditto.
 
+Ctrl + Down Arrow: Ditto.
+
+Alt + G: Refile a note. Return to the note ABOVE the previous when finished. 
+
+Ctrl + Up Arrow: Ditto.
 
 ### WINDOW MANAGEMENT FUNCTIONS
 
 USING THESE FUNCTIONS REQUIRES CHANGING THE CONFIGURATION FILE. IF YOU ARE NOT USING THESE, YOU DO NOT HAVE TO CHANGE IT. 
 
+---
 Ctrl + 1: Open / minimize first mindforger window.
+
 Ctrl + 2/3/4: Open / minimize second/etc mindforger window.
 
+---
 Ctrl + Q: Minimize / maximize all open windows. 
+
 Ctrl + Shift + Q: Open 2 or last "specific" number of MindForger windows. Different numbers of windows result in different winddow layouts. If there are already open windows, close them. 
+
 Ctrl + Shift + 2/3/4: Open 2/3/4 MindForger windows. This affects how they are tiled. The last function used here, if any, determines the number of windows that Ctrl + Shift + Q will open. 
 
 #### CONFIGURATION 
@@ -112,7 +133,9 @@ In order to clean up window alignment, adjust the two numbers below. The first d
 
 Ctrl + B/I/U: Create bold/italic/underline. This is a simple rebind for a more Windows control scheme. Bold/italic have an unused attempt at improving mindforger's stock text formatting functions, which is present in underline.
 
+---
 Alt + 1: Toggle hoist.
+
 Ctrl + P: Restart script. Will interrupt anything currently running. 
 
 ### INSTALLATION
@@ -134,7 +157,9 @@ The stuff before the two colons defines the keypress to execute the function.
 AutoHotkey's key aliases are:
 
 ^: CTRL
+
 +: SHIFT
+
 !: ALT
 
 If multiple are present, it means multiple must be pressed to execute the command.
