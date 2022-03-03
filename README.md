@@ -139,6 +139,8 @@ Alt + 1: Toggle hoist.
 
 Ctrl + P: Restart script. Will interrupt anything currently running. 
 
+I removed a function that intended to create hierarchical derivatives of other notes. It doesn't work well, but if you're curious, check out "secret_ctrlN.txt". 
+
 ### CONFIGURATION AND MODIFICATION
 
 #### Remapping keys
@@ -168,6 +170,23 @@ If a ~ is present before this, it means that the function is set to only execute
 First, install the latest AutoHotkey. Then, click on the script to turn it on. This is done every system restart. A "mfutils.cfg", included with "mfutils_r2.ahk", must be included in the same folder for it to run. Place it to your convenience. 
 
 ---
+
+## MISCELLANEOUS ADVICE
+
+* Mindforger distinguishes between "in-note" headers and "note division" headers based entirely on whether there is a space before the header (if there is no space, it's a note divider). This is why imports get a header-derived note layout. 
+  * The editor will, regardless of whether there is a space in front, make it have one. This means that new notes cannot be created in MindForger's editor. (Without bug exploitation)
+  * If you make a custom stencil, you must then always have a space before headers, or otherwise the first header to break this rule will have everything below it appear, but nothing above.
+* AltN + R (Refactor) has a search bar. This is very useful for quickly moving information packets around.
+* If you place three dashes below a piece of text, without at least a line dividing the two, it will turn into a header, and be recognized in a buggy way as a separate note. This is useful kind of, but it creates more dashes, and a new metadata tag, every single time you reopen the file, leading to unnecessary bloating.
+  * To avoid this, NEVER place a line of text directly above a line divider. Otherwise, you'll create some bizarre later-on file divisions.
+  * You can use this regex to "fix" bugged note-headers like this into normal ones. But it will reset the time (which occurs regardless because of the constant header-replacing, so not a big deal).
+  * FROM: (^[^#].*[^."?!\r\n])\r\n([^\d#•])
+  * TO: ##\1 <!-- Metadata: type: Note; created: 2021-02-08 21:29:21; reads: 1; read: 2021-02-08 22:26:55; revision: 1; modified: 2021-02-08 21:29:21; --> \r\n
+
+* Notebooks (.md files) will preserve their original filename when renamed, but the name WITHIN the notebook will change, and that's what MF shows you.
+* Bizarrely, exiting and entering a file both count as "reads". Test it yourself.
+* The number of reads in a file refers to you entering it, and has no correspondence to notes within it.  
+* The "word list" associations only check for like words within the particular MD file; no separators are tolerated. 
 
 I wrote this entire thing and then lost it so I wrote it again. It is 1 am. 
 
