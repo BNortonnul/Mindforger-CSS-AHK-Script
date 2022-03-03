@@ -182,9 +182,11 @@ First, install the latest AutoHotkey. Then, click on the script to turn it on. T
 * If you place three dashes below a piece of text, without at least a line dividing the two, it will turn into a header, and be recognized in a buggy way as a separate note. This is useful kind of, but it creates more dashes, and a new metadata tag, every single time you reopen the file, leading to unnecessary bloating.
   * To avoid this, NEVER place a line of text directly above a line divider. Otherwise, you'll create some bizarre later-on file divisions.
   * You can use this regex to "fix" bugged note-headers like this into normal ones. But it will reset the time (which occurs regardless because of the constant header-replacing, so not a big deal).
+
+```
   * FROM: (^[^#].*[^."?!\r\n])\r\n([^\d#•])
   * TO: ##\1 <!-- Metadata: type: Note; created: 2021-02-08 21:29:21; reads: 1; read: 2021-02-08 22:26:55; revision: 1; modified: 2021-02-08 21:29:21; --> \r\n
-
+```
 * Notebooks (.md files) will preserve their original filename when renamed, but the name WITHIN the notebook will change, and that's what MF shows you.
 * Bizarrely, exiting and entering a file both count as "reads". Test it yourself.
 * The number of reads in a file refers to you entering it, and has no correspondence to notes within it.  
