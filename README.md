@@ -47,7 +47,7 @@ Font dependencies: Lato, Playfair Display
 
 This is intended to provide workarounds for various issues with mindforger. This works only on Windows, because it is programmed in AutoHotkey.
 
-Be careful using "destructive" functions. They can blow up and destroy information if misused. Make sure to test them on cloned information. If they are consistently problematic, adjust the global variable "normalDelay" to add or reduce the multiplier of all sleep functions. 
+Be careful using "destructive" functions. They can blow up and destroy information if misused. Make sure to test them to determine what pace your MindForger can accept commands. On line 18, the global variable "normalDelay" is the base value which all delay commands are based off of; adjust it to whatever is appropriate for you.
 
 ### NOTE MOVEMENT FUNCTIONS
 
@@ -81,6 +81,7 @@ Ctrl + R: This function is done in the note editor. Extract the selection of tex
 
 ---
 \` (backtick key): Add in a timestamp. 
+
 Ctrl + \`: Create three backticks, which is one end of a Markdown blockquote. 
 
 ---
@@ -164,7 +165,7 @@ If a ~ is present before this, it means that the function is set to only execute
 
 ### INSTALLATION
 
-First, install the latest AutoHotkey. Then, click on the script to turn it on. This is done every system restart. A "mfutils.cfg", included with "mfutils_r2.ahk", must be included in the same folder for it to run. 
+First, install the latest AutoHotkey. Then, click on the script to turn it on. This is done every system restart. A "mfutils.cfg", included with "mfutils_r2.ahk", must be included in the same folder for it to run. Place it to your convenience. 
 
 ---
 
