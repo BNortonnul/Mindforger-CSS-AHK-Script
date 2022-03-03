@@ -138,10 +138,6 @@ Alt + 1: Toggle hoist.
 
 Ctrl + P: Restart script. Will interrupt anything currently running. 
 
-### INSTALLATION
-
-First, install the latest AutoHotkey. Then, click on the script to turn it on. This is done every system restart. A "mfutils.cfg", included with "mfutils_r.ahk", must be included in the same folder for it to run. 
-
 ### CONFIGURATION AND MODIFICATION
 
 #### Remapping keys
@@ -165,6 +161,10 @@ AutoHotkey's key aliases are:
 If multiple are present, it means multiple must be pressed to execute the command.
 
 If a ~ is present before this, it means that the function is set to only execute to keyboard keypresses (as opposed to script keypresses; sometimes necessary to prevent infinite loops). 
+
+### INSTALLATION
+
+First, install the latest AutoHotkey. Then, click on the script to turn it on. This is done every system restart. A "mfutils.cfg", included with "mfutils_r2.ahk", must be included in the same folder for it to run. 
 
 ---
 
