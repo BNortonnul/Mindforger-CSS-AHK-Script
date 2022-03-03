@@ -47,7 +47,7 @@ Font dependencies: Lato, Playfair Display
 
 This is intended to provide workarounds for various issues with mindforger. This works only on Windows, because it is programmed in AutoHotkey.
 
-Be careful using "destructive" functions. They can blow up and destroy information if misused. Make sure to test them on cloned information, and adjust the sleep functions (which are "Sleep, x"; x = x ms) to a stable pace for your computer.
+Be careful using "destructive" functions. They can blow up and destroy information if misused. Make sure to test them on cloned information. If they are consistently problematic, adjust the global variable "normalDelay" to add or reduce the multiplier of all sleep functions. 
 
 ### NOTE MOVEMENT FUNCTIONS
 
