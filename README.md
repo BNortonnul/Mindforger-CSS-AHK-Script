@@ -6,7 +6,7 @@ These can be found in "CSS.zip". To utilize, do as follows:
 
 ![mindforger_VdGQI7gnFH](https://user-images.githubusercontent.com/23107982/156518034-e4e3e622-5b6f-46d4-8d3f-0bbb2e968c25.png)
 
-![mindforger_Hb1v0r8UMq](https://user-images.githubusercontent.com/23107982/156518112-98ddf99c-f4db-490d-9593-3d55ba0815ae.png)
+![image](https://user-images.githubusercontent.com/23107982/156653526-70e30748-8fa6-4006-a0d4-0caebba4a425.png)
 
 ![mindforger_qFLZAXNIZo](https://user-images.githubusercontent.com/23107982/156518194-e98afc23-4ce5-480a-a7ff-0335d492bffa.png)
 
