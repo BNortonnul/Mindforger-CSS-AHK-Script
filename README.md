@@ -28,6 +28,8 @@ Font dependencies: Audiowide, Ubuntu Light
 
 This one uses the two images included. Keep them in the same directory together.
 
+Based heavily off of: http://www.csszengarden.com/177/
+
 ![mindforger_go4Tkp4HIX](https://user-images.githubusercontent.com/23107982/156517681-64e25ead-204e-49f1-863b-11f2bf3dd164.png)
 
 ### Vantablack
