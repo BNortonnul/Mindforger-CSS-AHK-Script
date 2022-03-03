@@ -12,6 +12,8 @@ These can be found in "CSS.zip". To utilize, do as follows:
 
 Refresh the preview to see the new CSS take effect.
 
+Make sure to install the fonts or otherwise it will not look like these previews.
+
 ### Sentinel
 
 Font dependencies: Ubuntu Medium, Ubuntu
@@ -115,7 +117,7 @@ Ctrl + P: Restart script. Will interrupt anything currently running.
 
 ### INSTALLATION
 
-Click on the script to turn it on. A "mfutils.cfg", included with "mfutils_r.ahk", must be included in the same folder for it to run. 
+First, install the latest AutoHotkey. Then, click on the script to turn it on. This is done every system restart. A "mfutils.cfg", included with "mfutils_r.ahk", must be included in the same folder for it to run. 
 
 ### CONFIGURATION AND MODIFICATION
 
